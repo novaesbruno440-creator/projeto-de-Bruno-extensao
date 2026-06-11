@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voz do SUS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Voz do SUS</h1>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#postos">Postos</a></li>
+                <li><a href="#avaliacao">Avaliações</a></li>
+                <li><a href="#denuncias">Denúncias</a></li>
+                <li><a href="#medicamentos">Medicamentos</a></li>
+                <li><a href="#guia">Guia do SUS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Início -->
+    <section id="inicio" class="banner">
+        <h2>Sua voz ajuda a melhorar a saúde pública</h2>
+        <p>
+            Consulte informações dos postos de saúde, avalie atendimentos,
+            faça denúncias e acompanhe campanhas do SUS.
+        </p>
+    </section>
+
+    <!-- Seleção de Cidade -->
+    <section id="postos">
+        <h2>Buscar Unidade de Saúde</h2>
+
+        <div class="seletores">
+
+            <div>
+                <label for="cidade">Cidade:</label>
+                <select id="cidade">
+                    <option value="">Selecione</option>
+                    <option value="itabuna">Itabuna</option>
+                    <option value="itacare">Itacaré</option>
+                    <option value="coaraci">Coaraci</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="posto">Posto:</label>
+                <select id="posto">
+                    <option value="">Selecione uma cidade</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Informações do Posto -->
+        <div id="infoPosto" class="card-info">
+
+            <h3>Informações da Unidade</h3>
+
+            <p><strong>Nome:</strong> <span id="nomePosto">-</span></p>
+
+            <p><strong>Bairro:</strong> <span id="bairroPosto">-</span></p>
+
+            <p><strong>Telefone:</strong> <span id="telefonePosto">-</span></p>
+
+            <p><strong>Horário:</strong> <span id="horarioPosto">-</span></p>
+
+            <p><strong>Pessoas aguardando:</strong>
+                <span id="filaPosto">-</span>
+            </p>
+
+            <h4>Serviços Disponíveis</h4>
+            <ul id="servicosPosto">
+                <li>Selecione um posto</li>
+            </ul>
+
+            <h4>Documentos Necessários</h4>
+            <ul>
+                <li>RG</li>
+                <li>CPF</li>
+                <li>Cartão do SUS</li>
+                <li>Comprovante de residência</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section id="avaliacao">
+
+        <h2>Avaliação do Atendimento</h2>
+
+        <form>
+
+            <label>Nome:</label>
+            <input type="text" placeholder="Digite seu nome">
+
+            <label>Nota:</label>
+            <select>
+                <option>1 ⭐</option>
+                <option>2 ⭐⭐</option>
+                <option>3 ⭐⭐⭐</option>
+                <option>4 ⭐⭐⭐⭐</option>
+                <option>5 ⭐⭐⭐⭐⭐</option>
+            </select>
+
+            <label>Comentário:</label>
+            <textarea rows="5"></textarea>
+
+            <button type="submit">Enviar Avaliação</button>
+
+        </form>
+
+    </section>
+
+    <!-- Denúncias -->
+    <section id="denuncias">
+
+        <h2>Registrar Denúncia</h2>
+
+        <form>
+
+            <label>Tipo do problema:</label>
+
+            <select>
+                <option>Demora no atendimento</option>
+                <option>Falta de medicamentos</option>
+                <option>Mau atendimento</option>
+                <option>Infraestrutura</option>
+                <option>Outro</option>
+            </select>
+
+            <label>Descrição:</label>
+            <textarea rows="5"></textarea>
+
+            <button type="submit">Enviar Denúncia</button>
+
+        </form>
+
+    </section>
+
+    <!-- Medicamentos -->
+    <section id="medicamentos">
+
+        <h2>Relatar Falta de Medicamentos</h2>
+
+        <form>
+
+            <label>Medicamento:</label>
+            <input type="text">
+
+            <label>Unidade:</label>
+            <input type="text">
+
+            <label>Observação:</label>
+            <textarea rows="4"></textarea>
+
+            <button type="submit">Registrar</button>
+
+        </form>
+
+    </section>
+
+    <!-- Guia do SUS -->
+    <section id="guia">
+
+        <h2>Guia do SUS</h2>
+
+        <div class="guia-card">
+
+            <h3>Documentos para Atendimento</h3>
+
+            <ul>
+                <li>RG</li>
+                <li>CPF</li>
+                <li>Cartão SUS</li>
+                <li>Comprovante de residência</li>
+            </ul>
+
+        </div>
+
+        <div class="guia-card">
+
+            <h3>Serviços Gratuitos</h3>
+
+            <ul>
+                <li>Vacinação</li>
+                <li>Consultas médicas</li>
+                <li>Pré-natal</li>
+                <li>Curativos</li>
+                <li>Acompanhamento de hipertensão</li>
+                <li>Acompanhamento de diabetes</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>Voz do SuS _ BRxxNO200578</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
